@@ -1,0 +1,19 @@
+.app-header {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 20px 40px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: fixed; /* Make it fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top of other content */
+  }
+  
+  .app-header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  

@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: black; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.main-div {
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  box-sizing: border-box;
+}
+
+button.add-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #007bff;
   color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button.add-button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.add-button:active {
+  background-color: #004494;
+}
+
+.task-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #e6f7ff;
+  margin-bottom: 15px;
+  height: 120px;
+}
+
+.task-div.completed-div {
+  background-color: #d4edda; 
+}
+
+.completed-text {
+  text-decoration: line-through; 
+}
+
+.button-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004494;
+}
+
+textarea.textarea {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #e6f7ff;
+  box-sizing: border-box;
+  resize: none; /* Prevent resizing */
+  font-family: inherit; /* Ensure the font matches the surrounding text */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+textarea.textarea::-webkit-scrollbar,
+.task-text::-webkit-scrollbar {
+  width: 8px;
+}
+
+textarea.textarea::-webkit-scrollbar-thumb,
+.task-text::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 4px;
+}
+
+textarea.textarea::-webkit-scrollbar-track,
+.task-text::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+textarea.textarea::-webkit-scrollbar-thumb:hover,
+.task-text::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3;
+}
+
+textarea.textarea::-webkit-scrollbar-thumb:active,
+.task-text::-webkit-scrollbar-thumb:active {
+  background-color: #004494;
+}
+
+.task-text {
+  white-space: pre-wrap; /* Wraps text to handle long content */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 100px;
+  overflow-y: auto; /* Enable scrolling for long content */
+  padding-right: 10px; /* Add padding to prevent text from being hidden under scrollbar */
 }
