@@ -3,9 +3,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .content {
@@ -17,7 +14,7 @@ body {
 }
 
 .main-div {
-  width: 400px;
+  width: 500px;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -112,9 +109,9 @@ textarea.textarea {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #e6f7ff;
   box-sizing: border-box;
-  resize: none; /* Prevent resizing */
-  font-family: inherit; /* Ensure the font matches the surrounding text */
-  overflow-y: auto; /* Enable vertical scrolling */
+  resize: none; 
+  font-family: inherit; 
+  overflow-y: auto; 
 }
 
 textarea.textarea::-webkit-scrollbar,
@@ -145,10 +142,10 @@ textarea.textarea::-webkit-scrollbar-thumb:active,
 }
 
 .task-text {
-  white-space: pre-wrap; /* Wraps text to handle long content */
+  white-space: pre-wrap; 
   overflow: hidden;
   text-overflow: ellipsis;
   max-height: 100px;
-  overflow-y: auto; /* Enable scrolling for long content */
-  padding-right: 10px; /* Add padding to prevent text from being hidden under scrollbar */
+  overflow-y: auto; 
+  padding-right: 10px; 
 }
